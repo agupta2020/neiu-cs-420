@@ -30,9 +30,6 @@ public class WriteOutToFile {
         this.query_url=nytEndPoint+"?api-key=";
     }
 
-
-
-
     public void writeBookToResources(JSONArray res_obj)throws IOException{
         FileWriter fileWriter = new FileWriter( this.fullFilePath );
         fileWriter.write(bookDataFileTitle+newLine+newLine+underline+newLine);
@@ -43,9 +40,7 @@ public class WriteOutToFile {
             fileWriter.write((String) result.get("title")+newLine);
         }
         fileWriter.close();
-
     }
-
 
     public void writeArticleToResources(JSONArray res_obj)throws IOException{
         FileWriter fileWriter = new FileWriter( this.fullFilePath );
