@@ -9,4 +9,6 @@ public class Article extends  Media{
         super(title, category);
     }
 
+
+
 }
