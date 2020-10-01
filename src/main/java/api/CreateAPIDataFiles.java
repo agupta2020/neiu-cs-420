@@ -6,6 +6,8 @@ import java.net.URISyntaxException;
 public class CreateAPIDataFiles {
     private String fullFilePath;
 
+
+
      public CreateAPIDataFiles (String fileName)  throws URISyntaxException {
          File dir = new File( getPath() );
          if ( !dir.exists() ) {
