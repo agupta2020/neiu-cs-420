@@ -1,24 +1,15 @@
 package api;
 
-import java.io.IOException;
-import java.io.InputStream;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
-
-
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-
 import javax.ws.rs.HttpMethod;
-import java.io.*;
-import java.net.URISyntaxException;
 
 public class NYTConnection {
-    private  HttpURLConnection apiConn=null;
-    private final int connectionTimeOut = 1000;
+    private  static HttpURLConnection apiConn=null;
+    private final static int connectionTimeOut = 1000;
 
-    private final String apiKey = System.getenv("API_KEY");
+    private final static String apiKey = System.getenv("API_KEY");
 
     public HttpURLConnection updateNYTHttpConnection(HttpURLConnection apiConn) throws java.io.IOException{
         HttpURLConnection updated_conn=null;

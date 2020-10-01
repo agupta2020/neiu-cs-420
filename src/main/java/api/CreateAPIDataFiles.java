@@ -27,6 +27,7 @@ public class CreateAPIDataFiles {
         path = path.substring( 0, path.indexOf("classes") );
         path += "resources" + File.separator + "nytdatafiles" + File.separator;
         return path;
+
     }
 
 }
