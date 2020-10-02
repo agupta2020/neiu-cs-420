@@ -2,6 +2,7 @@ package api;
 
 import java.io.File;
 import java.net.URISyntaxException;
+import java.nio.file.Path;
 
 public class CreateAPIDataFiles {
     private String fullFilePath;
@@ -13,7 +14,7 @@ public class CreateAPIDataFiles {
          if ( !dir.exists() ) {
              dir.mkdirs();
          }
-         this.fullFilePath=getPath() + fileName;
+         this.fullFilePath=getPath() + File.separator + fileName;
 
      }
 
@@ -22,11 +23,8 @@ public class CreateAPIDataFiles {
     }
 
     private static String getPath() throws URISyntaxException {
-
-        String path = ClassLoader.getSystemClassLoader().getResource("").toURI().getPath();
-        path = path.substring( 0, path.indexOf("classes") );
-        path += "resources" + File.separator + "nytdatafiles" + File.separator;
-        return path;
+        String path1 = Path.of("src","main","resources").toAbsolutePath().toString();
+        return path1;
 
     }
 
