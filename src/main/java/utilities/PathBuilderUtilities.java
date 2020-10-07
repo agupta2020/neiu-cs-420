@@ -1,6 +1,7 @@
 package utilities;
 
 import api.WriteOutToFile;
+import domain.MediaCategory;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
@@ -21,11 +22,11 @@ public class PathBuilderUtilities {
     static Path getInputPathOBJ(String inputFileName) throws IOException, NullPointerException, ParseException, URISyntaxException {
             Path p1 = Paths.get(prePath, inputFileName);
             if(! Files.isRegularFile(p1)) {
-                if(inputFileName.equals("Top Movies Critics Choice"+".txt")) {
+                if(inputFileName.equals(MediaCategory.MOVIE.getMediaDetails() +".txt")) {
                     WriteOutToFile topMovies = new WriteOutToFile(inputFileName, "MOVIES", topMoviesCriticChoice);
                     topMovies.writeDetails();
                 }
-                else if(inputFileName.equals("Top Rated Books"+".txt")) {
+                else if(inputFileName.equals(MediaCategory.BOOK.getMediaDetails()+".txt")) {
                     WriteOutToFile topBooks = new WriteOutToFile(inputFileName, "BOOK", bestSellerByDate);
                     topBooks.writeDetails();
                 }

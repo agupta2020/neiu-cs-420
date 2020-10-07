@@ -26,19 +26,27 @@ public abstract class Media {
         return this.title;
     }
 
-    public static Map<String, List<Media>> getMediaMap(String Category, List<Media> mediaList) {
+   /* public static Map<String, List<Media>> getMediaMap(String category, List<Media> mediaList) {
         Map<String, List<Media>> groupedMap = new HashMap<>();
         for (Media media : mediaList) {
-            addToMap(Category, media, groupedMap);
+            addToMap(category, media, groupedMap);
+        }
+        return groupedMap;
+    }*/
+
+    public static Map<MediaCategory, List<Media>> getMediaMap(MediaCategory mediaCategory, List<Media> mediaList) {
+        Map<MediaCategory, List<Media>> groupedMap = new HashMap<>();
+        for (Media media : mediaList) {
+            addToMap(mediaCategory, media, groupedMap);
         }
         return groupedMap;
     }
 
-    private static void addToMap(String Category, Media media, Map<String, List<Media>> map) {
-        if (!map.containsKey(Category))
-            map.put(Category, new ArrayList<>(Arrays.asList(media)));
+    private static void addToMap(MediaCategory mediaCategory, Media media, Map<MediaCategory, List<Media>> map) {
+        if (!map.containsKey(mediaCategory))
+            map.put(mediaCategory, new ArrayList<>(Arrays.asList(media)));
         else
-            map.get(Category).add(media);
+            map.get(mediaCategory).add(media);
     }
 
     @Override

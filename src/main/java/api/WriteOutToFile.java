@@ -77,7 +77,7 @@ public class WriteOutToFile {
 
     public void writeDetails() throws IOException,ParseException {
         HttpURLConnection conn = nytConnection.updateNYTHttpConnection(nytConnection.getNYTHttpConnection(query_url));
-        System.out.println("query_url "+ query_url);
+//        System.out.println("query_url "+ query_url);
             if (conn != null) {
                 final InputStream inputStream = conn.getInputStream();
                 final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));

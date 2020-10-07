@@ -1,9 +1,6 @@
 package utilities;
 
-import domain.Article;
-import domain.Book;
-import domain.Media;
-import domain.Movie;
+import domain.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,25 +12,18 @@ class StringReader extends ABSReader {
 
     private String lines;
 
-     StringReader(Path inputPath) {
+    StringReader(Path inputPath) {
         super(inputPath);
     }
 
-    /*List read() throws IOException {
-        List moviesList= new ArrayList<>();
-        for (String str : Files.readAllLines(getInputPathOBJ())){
-               moviesList.add(new Movie(str, "MOVIE"));
-        }
-        return moviesList;
-    }*/
 
     List<? extends Media> read(String category) throws IOException {
-        List mediaList= new ArrayList<>();
-        for (String str : Files.readAllLines(getInputPathOBJ())){
-            if(category == "Top Movies Critics Choice")
-            mediaList.add(new Movie(str,category));
-            else if(category == "Top Rated Books")
-                mediaList.add(new Book(str,category));
+        List mediaList = new ArrayList<>();
+        for (String str : Files.readAllLines(getInputPathOBJ())) {
+            if (category == MediaCategory.MOVIE.getMediaDetails())
+                mediaList.add(new Movie(str, category));
+            else if (category == MediaCategory.BOOK.getMediaDetails())
+                mediaList.add(new Book(str, category));
             else {
                 mediaList.add(new Article(str, category));
             }
