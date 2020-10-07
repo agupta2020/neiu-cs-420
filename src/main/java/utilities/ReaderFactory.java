@@ -14,7 +14,7 @@ import static domain.Media.getMediaMap;
 
 
 public class ReaderFactory {
-
+    private ReaderFactory() { }
 
     public static Map<MediaCategory, List<Media>> readApiFile(String inputFile) throws IOException, URISyntaxException, ParseException {
 
