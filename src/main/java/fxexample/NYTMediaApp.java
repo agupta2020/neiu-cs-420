@@ -21,7 +21,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Map;
 
-public class DisplayDataApp extends Application {
+public class NYTMediaApp extends Application {
 
 
     public static void main(String[] args) {
@@ -56,12 +56,12 @@ public class DisplayDataApp extends Application {
             public void changed(ObservableValue<? extends MediaCategory> observable, MediaCategory oldValue, MediaCategory newValue) {
                 mediaComboBox.setPromptText("--- Select " + newValue.getMediaDetails() + "  ---");
 
-                if (newValue.getMediaDetails() == MediaCategory.MOVIE.getMediaDetails()) {
+                if (newValue.getMediaDetails().equals(MediaCategory.MOVIE.getMediaDetails())) {
 
                     mediaComboBox.getItems().clear();
                     mediaComboBox.getItems().addAll(movieMap.get(newValue));
                     mediaComboBox.setVisible(true);
-                } else if (newValue.getMediaDetails() == MediaCategory.BOOK.getMediaDetails()) {
+                } else if (newValue.getMediaDetails().equals(MediaCategory.BOOK.getMediaDetails())) {
 
                     mediaComboBox.getItems().clear();
                     mediaComboBox.getItems().addAll(bookMap.get(newValue));

@@ -11,6 +11,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class PathBuilderUtilities {
+    private PathBuilderUtilities() { }
+
     static String prePath="src/main/resources";
     //summary: "Most Shared Articles"
     private static  String mostSharedArticle = "https://api.nytimes.com/svc/mostpopular/v2/emailed/30.json";

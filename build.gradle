@@ -30,4 +30,4 @@ javafx {
     modules= ['javafx.controls']
 }
 
-mainClassName = 'fxexample.DisplayDataApp'
+mainClassName = 'fxexample.NYTMediaApp'
