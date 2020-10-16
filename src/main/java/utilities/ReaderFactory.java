@@ -1,16 +1,16 @@
 package utilities;
 
-import domain.Media;
+import models.Media;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Map;
 
-import domain.MediaCategory;
+import models.MediaCategory;
 import org.json.simple.parser.ParseException;
 
-import static domain.Media.getMediaMap;
+import static models.Media.getMediaMap;
 
 
 public class ReaderFactory {

@@ -1,6 +1,6 @@
 package utilities;
 
-import domain.Media;
+import models.Media;
 
 import java.io.IOException;
 import java.nio.file.Path;

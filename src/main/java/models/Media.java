@@ -1,4 +1,4 @@
-package domain;
+package models;
 
 import java.util.*;
 
@@ -7,14 +7,20 @@ public abstract class Media {
 
     private String category;
     private String title;
+    private String short_summary;
 
-    protected Media(String title, String category) {
+    protected Media(String title, String category,String short_summary) {
         this.category = category;
         this.title = title;
+        this.short_summary=short_summary;
     }
 
     public String getTitle() {
         return title;
+    }
+
+    public String getShort_summary() {
+        return short_summary;
     }
 
     public String getCategory() {

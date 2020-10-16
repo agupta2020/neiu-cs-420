@@ -16,10 +16,8 @@ public class WriteOutToFile {
     private final String fullFilePath;
     private final String entityType;
     private final String query_url;
+    final static  String SEP="===>";
 
-    private final String bookDataFileTitle = "Top Rated Books Title";
-    private final String articleDataFileTitle = "Most Shared Articles";
-    private final String movieDataFileTitle = "Top Movies By Critics Choice";
     private final String newLine = "\r\n";
     private final String underline = "-------------------------------------";
 
@@ -32,32 +30,30 @@ public class WriteOutToFile {
 
     public void writeBookToResources(JSONArray res_obj)throws IOException{
         FileWriter fileWriter = new FileWriter( this.fullFilePath );
-        fileWriter.write(bookDataFileTitle+newLine+newLine+underline+newLine);
-        fileWriter.write("RANK"+ "  "+"TITLE"+newLine);
         for (Object o : res_obj) {
             JSONObject result = (JSONObject) o;
-            fileWriter.write(result.get("rank").toString() +"     ");
-            fileWriter.write((String) result.get("title")+newLine);
+            fileWriter.write((String) result.get("title")+SEP+(String) result.get("description")+newLine);
         }
         fileWriter.close();
     }
 
     public void writeArticleToResources(JSONArray res_obj)throws IOException{
         FileWriter fileWriter = new FileWriter( this.fullFilePath );
-        fileWriter.write(articleDataFileTitle+newLine+underline+newLine);
+//        fileWriter.write(articleDataFileTitle+newLine+underline+newLine);
         for (Object o : res_obj) {
             JSONObject result = (JSONObject) o;
-            fileWriter.write((String) result.get("title")+newLine);
+            fileWriter.write((String) result.get("title")+SEP+(String) result.get("abstract")+newLine);
         }
         fileWriter.close();
     }
 
     public void writeMovieToResources(JSONArray res_obj)throws IOException{
         FileWriter fileWriter = new FileWriter( this.fullFilePath );
-        fileWriter.write(movieDataFileTitle+newLine+underline+newLine);
+//        fileWriter.write(movieDataFileTitle+newLine+underline+newLine);
         for (Object o : res_obj) {
             JSONObject result = (JSONObject) o;
-            fileWriter.write((String) result.get("display_title")+newLine);
+//            fileWriter.write((String) result.get("display_title")+newLine);
+            fileWriter.write((String) result.get("display_title")+SEP+(String) result.get("summary_short")+newLine);
         }
         fileWriter.close();
     }
@@ -77,7 +73,6 @@ public class WriteOutToFile {
 
     public void writeDetails() throws IOException,ParseException {
         HttpURLConnection conn = nytConnection.updateNYTHttpConnection(nytConnection.getNYTHttpConnection(query_url));
-//        System.out.println("query_url "+ query_url);
             if (conn != null) {
                 final InputStream inputStream = conn.getInputStream();
                 final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));

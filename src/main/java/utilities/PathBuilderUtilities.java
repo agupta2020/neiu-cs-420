@@ -1,7 +1,7 @@
 package utilities;
 
 import api.WriteOutToFile;
-import domain.MediaCategory;
+import models.MediaCategory;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;

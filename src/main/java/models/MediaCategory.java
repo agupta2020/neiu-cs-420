@@ -1,4 +1,4 @@
-package domain;
+package models;
 
 public enum MediaCategory {
     MOVIE("Top Movies Critics Choice",3),
