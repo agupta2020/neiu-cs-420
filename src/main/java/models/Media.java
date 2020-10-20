@@ -32,15 +32,7 @@ public abstract class Media {
         return this.title;
     }
 
-   /* public static Map<String, List<Media>> getMediaMap(String category, List<Media> mediaList) {
-        Map<String, List<Media>> groupedMap = new HashMap<>();
-        for (Media media : mediaList) {
-            addToMap(category, media, groupedMap);
-        }
-        return groupedMap;
-    }*/
-
-    public static Map<MediaCategory, List<Media>> getMediaMap(MediaCategory mediaCategory, List<Media> mediaList) {
+      public static Map<MediaCategory, List<Media>> getMediaMap(MediaCategory mediaCategory, List<Media> mediaList) {
         Map<MediaCategory, List<Media>> groupedMap = new HashMap<>();
         for (Media media : mediaList) {
             addToMap(mediaCategory, media, groupedMap);
