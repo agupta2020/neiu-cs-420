@@ -116,7 +116,6 @@ public class NYTComboBox {
     private void createMediaSelectorListener() {
         mediaComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
-//                    String displayText = newValue.getCategory() + "\n" + "Item Title" + newValue.getTitle();
                 String displayText = "Concise Summary"+newLine+underline+newLine+ newValue.getShort_summary();
                 textBox.setText(displayText);
                 textBox.setVisible(true);

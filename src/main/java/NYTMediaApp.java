@@ -32,7 +32,7 @@ public class NYTMediaApp extends Application {
 
         BorderPane borderPane = new BorderPane();
         setUpBoarderPane(borderPane);
-        Scene scene = new Scene(borderPane, 600, 500);
+        Scene scene = new Scene(borderPane, 800, 500);
         stage.setScene(scene);
         stage.setTitle("FX DEMO");
         stage.show();

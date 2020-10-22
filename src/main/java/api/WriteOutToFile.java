@@ -19,7 +19,7 @@ public class WriteOutToFile {
     final static  String SEP="===>";
 
     private final String newLine = "\r\n";
-    private final String underline = "-------------------------------------";
+
 
     public  WriteOutToFile(String fileName, String entityType, String nytEndPoint) throws URISyntaxException {
         CreateAPIDataFiles dataFiles=new CreateAPIDataFiles(fileName);
@@ -39,7 +39,6 @@ public class WriteOutToFile {
 
     public void writeArticleToResources(JSONArray res_obj)throws IOException{
         FileWriter fileWriter = new FileWriter( this.fullFilePath );
-//        fileWriter.write(articleDataFileTitle+newLine+underline+newLine);
         for (Object o : res_obj) {
             JSONObject result = (JSONObject) o;
             fileWriter.write((String) result.get("title")+SEP+(String) result.get("abstract")+newLine);
@@ -49,10 +48,8 @@ public class WriteOutToFile {
 
     public void writeMovieToResources(JSONArray res_obj)throws IOException{
         FileWriter fileWriter = new FileWriter( this.fullFilePath );
-//        fileWriter.write(movieDataFileTitle+newLine+underline+newLine);
         for (Object o : res_obj) {
             JSONObject result = (JSONObject) o;
-//            fileWriter.write((String) result.get("display_title")+newLine);
             fileWriter.write((String) result.get("display_title")+SEP+(String) result.get("summary_short")+newLine);
         }
         fileWriter.close();
@@ -63,7 +60,6 @@ public class WriteOutToFile {
         return response;
     }
     public  void buildJSONObject(JSONObject response ) throws  IOException {
-//        JSONObject result= (JSONObject) response.get("results");
         JSONArray res_obj=null;
         if (entityType=="BOOK") { res_obj = (JSONArray) ((JSONObject) response.get("results")).get("books"); writeBookToResources(res_obj); }
         else if (entityType=="ARTICLE") {  res_obj = (JSONArray) response.get("results"); writeArticleToResources(res_obj);}
