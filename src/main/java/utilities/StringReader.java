@@ -22,7 +22,7 @@ class StringReader extends ABSReader {
 
     List<Media> read(String category) throws IOException {
         List<Media> mediaList = new ArrayList<>();
-        Arrays.asList(Files.readAllLines(getInputPathOBJ(), StandardCharsets.ISO_8859_1)).forEach(fileStr -> fileStr.forEach(str -> {
+        Arrays.asList(Files.lines(getInputPathOBJ(), StandardCharsets.ISO_8859_1)).forEach(fileStr -> fileStr.forEach(str -> {
             String title = str.split(SEP)[0];
             String short_summary = str.split(SEP)[1];
             if (category.equals(MediaCategory.MOVIE.getMediaDetails()))

@@ -1,15 +1,13 @@
 package utilities;
 
 import models.Media;
+import models.MediaCategory;
+import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
-import models.MediaCategory;
-import org.json.simple.parser.ParseException;
 
 import static models.Media.getMediaMap;
 
@@ -27,7 +25,7 @@ public class ReaderFactory {
         return readMediaFile(new StringReader(PathBuilderUtilities.getInputPathOBJ(inputFile + ".txt")), inputCategory);
     }
 
-    private static Map<MediaCategory, List<Media>> readMediaFile(ABSReader rwOBJ, MediaCategory inputCategory) throws ParseException, IOException, URISyntaxException {
+    private static Map<MediaCategory, List<Media>> readMediaFile(ABSReader rwOBJ, MediaCategory inputCategory) throws  IOException {
         return getMediaMap(inputCategory, rwOBJ.read(inputCategory.getMediaDetails()));
     }
 
