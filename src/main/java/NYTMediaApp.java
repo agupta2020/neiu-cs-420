@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.RadioButton;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
@@ -14,8 +15,7 @@ import models.Media;
 import models.MediaCategory;
 import org.json.simple.parser.ParseException;
 import views.NYTComboBox;
-
-
+import views.NYTRadioButtons;
 
 
 public class NYTMediaApp extends Application {
@@ -29,13 +29,22 @@ public class NYTMediaApp extends Application {
     public void start(Stage stage) throws IOException, URISyntaxException, ParseException {
         displayComboBox = new NYTComboBox();
 
-
         BorderPane borderPane = new BorderPane();
         setUpBoarderPane(borderPane);
         Scene scene = new Scene(borderPane, 800, 500);
         stage.setScene(scene);
         stage.setTitle("FX DEMO");
         stage.show();
+        secondScene();
+    }
+
+    private void secondScene() {
+
+        Scene scene1 = new Scene(new NYTRadioButtons().getRadioBorderPane(), 500, 500);
+        Stage secondStage = new Stage();
+        secondStage.setScene(scene1);
+        secondStage.setTitle("Aggregation Analysis");
+        secondStage.show();
     }
 
     private void setUpBoarderPane(BorderPane boarderPane){
@@ -45,6 +54,7 @@ public class NYTMediaApp extends Application {
 }
 
     private void seUpHBox(HBox hBox) {
+
         hBox.setSpacing(10);
         ComboBox<MediaCategory> mediaCategoryComboBox = displayComboBox.getMediaCategoriesComboBox();
         ComboBox<Media> mediaComboBox= displayComboBox.getMediaComboBox();

@@ -10,12 +10,12 @@ public class CreateAPIDataFiles {
 
 
      public CreateAPIDataFiles (String fileName)  throws URISyntaxException {
+
          File dir = new File( getPath() );
          if ( !dir.exists() ) {
              dir.mkdirs();
          }
          this.fullFilePath=getPath() + File.separator + fileName;
-
      }
 
     public String getFullFilePath() {

@@ -14,6 +14,7 @@ import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import static javafx.collections.FXCollections.observableArrayList;
 import static utilities.ReaderFactory.readApiFile;
@@ -31,38 +32,38 @@ public class NYTComboBox {
     private static class MediaStringConverter extends StringConverter<Media> {
         @Override
         public String toString(Media media) {
-            if (media == null) {
-                return null;
-            } else {
-                return media.getTitle();
-            }
-
+            return (media == null)? null : media.getTitle();
         }
 
         @Override
         public Media fromString(String title) {
-            for( List<Media> media: mediaMap.values()){
-                for(Media justMedia: media){
-                    if (justMedia.getTitle().equals(title)) return justMedia;
-                }
-            }
-            return null;
+
+            List<Media> listMediaItems = mediaMap.values()
+                    .stream()
+                    .flatMap(List::stream)
+                    .filter(media -> media.getTitle().equals(title))
+                    .limit(1)
+                    .collect(Collectors.toList());
+            return listMediaItems.isEmpty() ? null : listMediaItems.get(0);
         }
     }
 
-    private HashMap<MediaCategory, List<Media>> callReadApiFile() throws IOException, URISyntaxException, ParseException {
+    static HashMap<MediaCategory, List<Media>> callReadApiFile() throws IOException, URISyntaxException, ParseException {
         mediaMap = readApiFile("Top Movies Critics Choice");
         mediaMap.putAll(readApiFile("Top Rated Books"));
         mediaMap.putAll(readApiFile("Most Shared Articles"));
         return (HashMap<MediaCategory, List<Media>>) mediaMap;
 
     }
+
     public NYTComboBox() throws IOException, URISyntaxException, ParseException {
         mediaType = observableArrayList(callReadApiFile().keySet());
         textBox = new Text();
         setUpMedia();
         setUpMediaCategories();
     }
+
+
 
     private void setUpMediaCategories() {
         mediaCategoriesComboBox = new ComboBox<>();
@@ -88,6 +89,7 @@ public class NYTComboBox {
             mediaComboBox.setVisible(true);
         });
     }
+
     private void setUpMedia() {
         mediaComboBox = new ComboBox<>();
         mediaComboBox.setConverter(new MediaStringConverter());
@@ -116,7 +118,7 @@ public class NYTComboBox {
     private void createMediaSelectorListener() {
         mediaComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
-                String displayText = "Concise Summary"+newLine+underline+newLine+ newValue.getShort_summary();
+                String displayText = "Concise Summary" + newLine + underline + newLine + newValue.getShort_summary();
                 textBox.setText(displayText);
                 textBox.setVisible(true);
             }
