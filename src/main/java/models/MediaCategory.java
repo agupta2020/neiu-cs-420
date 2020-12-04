@@ -1,9 +1,9 @@
 package models;
 
 public enum MediaCategory {
-    MOVIE("Top Movies Critics Choice",3),
-    ARTICLE("Most Shared Articles", 1),
-    BOOK("Top Rated Books", 2);
+    ARTICLE("SearchedArticle", 1),
+    BOOK("BestBooks", 2),
+    MOVIE("MovieReview", 3);
 
 
     private  final  String mediaDetails;

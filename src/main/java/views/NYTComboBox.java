@@ -7,10 +7,8 @@ import javafx.scene.text.Text;
 import javafx.util.StringConverter;
 import models.Media;
 import models.MediaCategory;
-import org.json.simple.parser.ParseException;
-
 import java.io.IOException;
-import java.net.URISyntaxException;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,15 +46,15 @@ public class NYTComboBox {
         }
     }
 
-    static HashMap<MediaCategory, List<Media>> callReadApiFile() throws IOException, URISyntaxException, ParseException {
-        mediaMap = readApiFile("Top Movies Critics Choice");
-        mediaMap.putAll(readApiFile("Top Rated Books"));
-        mediaMap.putAll(readApiFile("Most Shared Articles"));
-        return (HashMap<MediaCategory, List<Media>>) mediaMap;
+    static HashMap<MediaCategory, List<Media>> callReadApiFile() throws IOException, InterruptedException, java.text.ParseException {
+        mediaMap = readApiFile("SearchedArticle");
+        mediaMap.putAll(readApiFile("BestBooks"));
+        mediaMap.putAll(readApiFile("MovieReview"));
 
+        return (HashMap<MediaCategory, List<Media>>) mediaMap;
     }
 
-    public NYTComboBox() throws IOException, URISyntaxException, ParseException {
+    public NYTComboBox() throws IOException, InterruptedException, java.text.ParseException {
         mediaType = observableArrayList(callReadApiFile().keySet());
         textBox = new Text();
         setUpMedia();
@@ -70,14 +68,7 @@ public class NYTComboBox {
         mediaCategoriesComboBox.getItems().addAll(mediaType);
 
         // sorting categories by their defined position in ENUM Class
-        mediaCategoriesComboBox.getItems().sort((o1, o2) -> {
-            if (o1.getPosition() < o2.getPosition()) {
-                return -1;
-            } else if (o1.getPosition() > o2.getPosition()) {
-                return 1;
-            } else
-                return 0;
-        });
+        mediaCategoriesComboBox.getItems().sort(Comparator.comparingInt(MediaCategory::getPosition));
         mediaCategoriesComboBox.setPromptText("---- Select a MediaCategory ----");
 
         mediaCategoriesComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
@@ -105,7 +96,7 @@ public class NYTComboBox {
             protected void updateItem(Media item, boolean empty) {
                 super.updateItem(item, empty);
                 if (empty || item == null) {
-                    setText("-- Select a value --");
+                    setText("-- Please make a selection --");
 
                 } else {
                     MediaStringConverter mediaStringConverter = new MediaStringConverter();
