@@ -41,7 +41,6 @@ public class WriteBooks implements FetchPrepareRecords{
         for (int i = 0; i < 30; i = i + 7) {
             c.setTime(dateToUse);
             c.add(Calendar.DATE, -i);
-            System.out.println("Testing connection for page " + timeFormat.format(c.getTime()));
             HttpURLConnection conn = nytConnection.
                     updateNYTHttpConnection(nytConnection
                             .getBookNYTHttpConnection(query_url, timeFormat.format(c.getTime()), strings[0]));
