@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Movie extends Media{
-    private Date publish_date;
-    private String reviewer;
+    private final Date publish_date;
+    private final String reviewer;
 
     public Movie(String category, String title, String short_summary, Date publish_date, String reviewer) {
         super(title, category, short_summary);

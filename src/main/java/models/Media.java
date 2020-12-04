@@ -4,9 +4,9 @@ import java.util.*;
 
 public abstract class Media {
 
-    private String category;
-    private String title;
-    private String short_summary;
+    private final String category;
+    private final String title;
+    private final String short_summary;
 
     protected Media(String title, String category,String short_summary) {
         this.category = category;

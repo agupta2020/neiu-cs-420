@@ -24,12 +24,12 @@ public class Article extends Media{
         return Objects.hash(super.hashCode(), source, section_name, publish_date, documentType, materialType, wordCount);
     }
 
-    private String source;
-    private String section_name;
-    private Date publish_date;
-    private String documentType;
-    private String materialType;
-    private int wordCount;
+    private final String source;
+    private final String section_name;
+    private final Date publish_date;
+    private final String documentType;
+    private final String materialType;
+    private final int wordCount;
 
     public Article(String title, String category, String short_summary, String source, String section_name, Date publish_date, String documentType, String materialType, int wordCount) {
         super(title, category, short_summary);

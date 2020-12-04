@@ -5,9 +5,9 @@ import java.util.Objects;
 
 public class Book extends  Media {
 
-    private Date publish_date;
-    private String book_type;
-    private String rank;
+    private final Date publish_date;
+    private final String book_type;
+    private final String rank;
 
     public Book(String category, String title, String short_summary, Date publish_date, String book_type, String rank) {
         super(title,category, short_summary);

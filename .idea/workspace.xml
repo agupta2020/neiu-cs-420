@@ -33,83 +33,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9480822f-eac0-4f4d-9d2d-60f9cbd7700e" name="Default Changelist" comment="">
+    <list default="true" id="9480822f-eac0-4f4d-9d2d-60f9cbd7700e" name="Default Changelist" comment="Splash screen deleted">
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nyt-reviews.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/NYTMediaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/NYTMediaApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/api/CreateAPIDataFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/api/CreateAPIDataFiles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/api/NYTConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/api/NYTConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/api/WriteOutToFile.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Article.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/MediaCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/MediaCategory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/models/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/models/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utilities/ABSReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utilities/ABSReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utilities/PathBuilderUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utilities/PathBuilderUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utilities/ReaderFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utilities/ReaderFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utilities/StringReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utilities/StringReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/views/NYTComboBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/views/NYTComboBox$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/views/NYTComboBox$MediaStringConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/views/NYTComboBox$MediaStringConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/views/NYTComboBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/views/NYTComboBox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.idea/resources.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Most Shared Articles.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Top Movies Critics Choice.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Top Rated Books.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/views/SplashScreenLoader$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/views/SplashScreenLoader.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NYTMediaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NYTMediaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/CreateAPIDataFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/CreateAPIDataFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/NYTConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/NYTConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/WriteOutToFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/MediaCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/MediaCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ABSReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ABSReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/PathBuilderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/PathBuilderUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ReaderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ReaderFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/StringReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/StringReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/NYTComboBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/NYTComboBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.idea/resources.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Most Shared Articles.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Top Movies Critics Choice.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Top Rated Books.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/SplashScreenLoader.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,8 +213,16 @@
       <option name="presentableId" value="Default" />
       <updated>1606102513904</updated>
       <workItem from="1606102515323" duration="134730000" />
-      <workItem from="1607059424071" duration="10944000" />
+      <workItem from="1607059424071" duration="12760000" />
     </task>
+    <task id="LOCAL-00001" summary="committing my final changes.">
+      <created>1607105778895</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607105778895</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +239,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="committing my final changes." />
+    <MESSAGE value="Splash screen deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Splash screen deleted" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606787276838">
@@ -308,22 +266,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606868740691" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1607105337258">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1607113494567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607105337258" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1607105337258">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607113494567" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1607113494566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607105337258" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1607105337258">
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607113494566" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1607113494566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607105337258" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1607105337258">
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607113494566" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1607113494566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607105337258" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607113494566" />
     <state width="1493" height="157" key="GridCell.Tab.1.bottom" timestamp="1606429064727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -344,6 +302,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="346" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1607040911826" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607105805383">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607105805383" />
     <state x="962" y="334" key="extract.method.dialog" timestamp="1607062871077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

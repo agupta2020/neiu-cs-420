@@ -12,13 +12,9 @@ import models.Media;
 import models.MediaCategory;
 import views.NYTComboBox;
 import views.NYTRadioButtons;
-import views.SplashScreenLoader;
 
 import java.io.IOException;
 import java.text.ParseException;
-import java.util.concurrent.TimeUnit;
-
-
 
 
 public class NYTMediaApp extends Application {
@@ -28,7 +24,7 @@ public class NYTMediaApp extends Application {
     private static final String preloadingMsg="This application may take 5 minutes to pull complete data files from NYT. " +
             "Please wait!!!";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         launch(args);
     }
 
@@ -52,9 +48,6 @@ public class NYTMediaApp extends Application {
             errorScene(e.getMessage());
         }
     }
-
-
-
     private void errorScene(String exceptionMsg) {
         BorderPane errBorderPane = new BorderPane();
         HBox errorHBox = new HBox();
