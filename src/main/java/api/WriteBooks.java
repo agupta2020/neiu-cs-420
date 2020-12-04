@@ -45,7 +45,7 @@ public class WriteBooks implements FetchPrepareRecords{
                     updateNYTHttpConnection(nytConnection
                             .getBookNYTHttpConnection(query_url, timeFormat.format(c.getTime()), strings[0]));
             openAPIConnection(conn);
-            TimeUnit.SECONDS.sleep(7);
+            TimeUnit.SECONDS.sleep(8);
 
         }
     }

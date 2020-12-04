@@ -21,7 +21,7 @@ public class NYTMediaApp extends Application {
     private NYTComboBox displayComboBox;
     private static final String preMsg="Please wait!  there is an error. \r\n ==>";
     private static final String postMsg=" <==\r\n Kindly correct the issue and re-run the application";
-    private static final String preloadingMsg="This application may take around 8 minutes to pull complete data files from NYT. " +
+    private static final String preloadingMsg="This application may take around 10 minutes to pull complete data files from NYT. " +
             "Please wait!!!";
 
     public static void main(String[] args)  {

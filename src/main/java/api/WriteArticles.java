@@ -48,10 +48,11 @@ public class WriteArticles implements FetchPrepareRecords {
                 HttpURLConnection conn = nytConnection.
                         updateNYTHttpConnection(nytConnection
                                 .getArticleNYTHttpConnection(query_url, begin_date, end_date, i));
+
                 openAPIConnection(conn);
-                TimeUnit.SECONDS.sleep(7);
+                TimeUnit.SECONDS.sleep(8);
             }
-            TimeUnit.SECONDS.sleep(14);
+            TimeUnit.SECONDS.sleep(16);
         }
     }
 

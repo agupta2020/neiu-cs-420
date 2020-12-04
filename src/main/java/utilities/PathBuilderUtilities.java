@@ -25,6 +25,7 @@ public class PathBuilderUtilities {
         Path p1 = Paths.get(prePath, inputFileName);
         if (!Files.isRegularFile(p1)) {
             if (inputFileName.equals(MediaCategory.ARTICLE.getMediaDetails() + ".txt")) {
+                TimeUnit.SECONDS.sleep(60);
                 WriteArticles betaArticle = new WriteArticles(inputFileName, "ARTICLE", articleEndPoint);
                 betaArticle.fetchFromAPI();
             } else if (inputFileName.equals(MediaCategory.BOOK.getMediaDetails() + ".txt")) createBooks(inputFileName);
@@ -37,11 +38,11 @@ public class PathBuilderUtilities {
         TimeUnit.SECONDS.sleep(60);
         WriteMovies Movie = new WriteMovies(inputFileName, "MOVIE", movieReviewEndPoint);
         Movie.fetchFromAPI("A. O. Scott");
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(8);
         Movie.fetchFromAPI("Manohla Dargis");
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(8);
         Movie.fetchFromAPI("Lawrence Van Gelder");
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(8);
         Movie.fetchFromAPI("Nina Darnton");
     }
 
@@ -49,13 +50,13 @@ public class PathBuilderUtilities {
         TimeUnit.SECONDS.sleep(60);
         WriteBooks Book = new WriteBooks(inputFileName, "BOOK", bookEndPoint);
         Book.fetchFromAPI("Hardcover Fiction");
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(8);
         Book.fetchFromAPI("Hardcover NonFiction");
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(8);
         Book.fetchFromAPI("Paperback Nonfiction");
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(8);
         Book.fetchFromAPI("Picture Books");
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(8);
         Book.fetchFromAPI("Series Books");
     }
 

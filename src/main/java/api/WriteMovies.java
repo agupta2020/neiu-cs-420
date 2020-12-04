@@ -32,6 +32,7 @@ public class WriteMovies implements FetchPrepareRecords{
         HttpURLConnection conn = nytConnection.
                 updateNYTHttpConnection(nytConnection
                         .getMovieReviewNYTHttpConnection(query_url, reviewer[0]));
+
         openAPIConnection(conn);
     }
 
